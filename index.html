@@ -1,56 +1,1056 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-  <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-  <title>Welcome to my world</title>
-  
-  <style>
-    @media (prefers-color-scheme: dark) {
-      html { background-color: #111111; color: #fbfbfb; }
-      a { color: #ca8465; }
-    }
-    
-    body {
-      line-height: 1.6;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
-      text-align: center;
-      margin: 1rem auto;
-      min-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background-image: url(https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ee/Dirt_%28texture%29_JE1_BE1.png/revision/latest?cb=20220403185110);
-      background-repeat: repeat;
-      background-position: center;
-    }
-    
-    img.u-photo { border-radius: 50%; }
-    ul { padding: 0; list-style: none; }
-    
-  </style>
-  
-</head>
-
-<body>
-  <main class="h-card" rel="author">
-
-    <h1>
-      I'm <span class="p-name">Alfred</span>.
-    </h1>
-
-    <p class="p-note">
-      ...and I am a human on the Internet.
-    </p>
-
-    <ul>
-      <li><a class="u-uid u-url" href="__this_page__">Random link</a></li>
-    </ul>
-  </main>
-</body>
-
+<html lang="en-us">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>McDude YTs website</title>
+        <meta name="description" content="A website where i talk about Kirby, video games and more fun things.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-title" content="Daniele">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <!-- Canonical tag -->
+        <link rel="canonical" href="https://daniele63.com/">
+    </head>
+    <body id="body">
+        <!---Site Container--->
+        <div id="websiteContainer">
+            <!-- Spacer -->
+            <div id="websiteSpacerTop"></div>
+            <!-- Header -->
+            <header id="header">
+                <img src="images/header-logo.png" alt="Logo and Title" class="header-logo">
+            </header>
+            <!-- Left Aside -->
+            <aside id="leftSiteContent">
+                <!-- Main Navigation -->
+                <nav id="leftNav" aria-label="Main Navigation">
+                    <div class="nav-categories">
+                        <span>This Website</span>
+                        <div class="nav-items">
+                            <img src="images/home.png" class="nav-icons" alt="Kirby's house"><a href="index" class="nav-links-active" id="navHome">Home</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/site-info.png" class="nav-icons" alt="Blue Kirby"><a href="site_info" class="nav-links" id="navSiteInfo">Site Info</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/past-versions.png" class="nav-icons" alt="Star"><a href="past_versions" class="nav-links" id="navPastVersions">Past Versions</a>
+                        </div>
+                    </div>
+                    <div class="nav-categories">
+                        <span>Personal</span>
+                        <div class="nav-items">
+                            <img src="images/about-me.png" class="nav-icons" alt="Kirby"><a href="about_me" class="nav-links" id="navAboutMe">About Me</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/favorite-games.png" class="nav-icons" alt="N64 Logo"><a href="favorite_games" class="nav-links" id="navFavoriteGames">Favorite Games</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/anime-reviews.png" class="nav-icons" alt="Konata Izumi"><a href="anime_reviews" class="nav-links" id="navAnimeReviews">Anime Reviews</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/terrariums.png" class="nav-icons" alt="Terrarium"><a href="terrariums" class="nav-links" id="navTerrariums">Terrariums</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/artworks.png" class="nav-icons" alt="Kirby 64 Painting"><a href="artworks" class="nav-links" id="navArtworks">Artworks</a>
+                        </div>
+                    </div>
+                    <div class="nav-categories">
+                        <span>Entertainment</span>
+                        <div class="nav-items">
+                            <img src="images/music-player.png" class="nav-icons" alt="Mike Kirby"><a href="music_player" class="nav-links" id="navMusicPlayer">Music Player ♪</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/crt_television.png" class="nav-icons" alt="Cartoonish CRT TV"><a href="crt_television" class="nav-links" id="navCRT">CRT Television</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/realistic_crt.png" class="nav-icons" alt="CRT TV Realistic"><a href="others/crt-tv/" class="nav-links-external">Realistic CRT</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/arcade-games.png" class="nav-icons" alt="Pixel Mario"><a href="arcade_games" class="nav-links" id="navArcadeGames">Arcade Games</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/sketchbook.png" class="nav-icons" alt="Adeleine from Kirby"><a href="sketchbook" class="nav-links" id="navSketchbook">Sketchbook</a>
+                        </div>
+                    </div>
+                    <div class="nav-categories">
+                        <span>Cool Stuff</span>
+                        <div class="nav-items">
+                            <img src="images/coding-tricks.png" class="nav-icons" alt="HTML5 Logo"><a href="coding_tricks" class="nav-links" id="navCodingTricks">Coding Tricks</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/all-kirby-games.png" class="nav-icons" alt="Retro Kirby"><a href="all_kirby_games" class="nav-links" id="navAllKirbyGames">All Kirby Games</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/miscellaneous.png" class="nav-icons" alt="Kirby 64 Painting 2"><a href="miscellaneous" class="nav-links" id="navMiscellaneous">Miscellaneous</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/gif-collection.png" class="nav-icons" alt="King DeDeDe"><a href="gif_collection" class="nav-links" id="navGifCollection">GIF Collection</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/guestbook.png" class="nav-icons" alt="Open Book"><a href="guestbook" class="nav-links" id="navGuestbook">My Guestbook</a>
+                        </div>
+                    </div>
+                    <div class="nav-categories">
+                        <span>My Other Pages</span>
+                        <div class="nav-items">
+                            <img src="images/mh_tribute.png" class="nav-icons" alt="Felyne"><a href="others/mhfu-tribute/index" class="nav-links-external">Monster Hunter</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/minecraft_tribute.png" class="nav-icons" alt="Grass Block"><a href="others/minecraft-tribute/index" class="nav-links-external">Minecraft</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/wall-e_tribute.png" class="nav-icons" alt="BNL Logo"><a href="others/wall-e-tribute/home" class="nav-links-external">WALL-E</a>
+                        </div>
+                        <hr>
+                        <div class="nav-items">
+                            <img src="images/frutigeraeroarchive.png" class="nav-icons" alt="Windows 7 Orb"><a href="https://frutigeraeroarchive.org/" class="nav-links-external">FA Archive</a>
+                        </div>
+                    </div>
+                    <!-- Nav Music Player -->
+                    <audio id="navMusic">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                    <!-- Music Controls -->
+                    <div class="nav-music-div">
+                        <div class="nav-music-marquee">
+                            <span id="currentSongInfo">
+                                <!-- Current song information will go here -->
+                            </span>
+                        </div>
+                        <nav aria-label="Music Player">
+                            <div>
+                                <button id="navMusicPlay">Play</button>
+                                <button id="navMusicPause">Pause</button>
+                            </div>
+                            <div aria-label="Music Player Media Controls">
+                                <button id="navMusicPrevious">Back</button>
+                                <button id="navMusicNext">Next</button>
+                            </div>
+                        </nav>
+                    </div>
+                </nav>
+            </aside>
+            <!-- Right Aside -->
+            <aside id="rightSiteContent">
+                <div class="aside-ads-container">
+                    <span>Cool Posters</span>
+                    <img src="images/azumanga.jpg" alt="Azumanga Daioh Poster" title="Azumanga Daioh">
+                    <img src="images/card_captor_sakura.jpg" alt="Card Captor Sakura Poster" title="Card Captor Sakura">
+                    <img src="images/nichijou.jpg" alt="Nichijou Poster" title="Nichijou">
+                    <img src="images/kirby_gameboy.jpg" alt="Ad for Kirby Game Boy game" title="Kirby Tilt 'n' Tumble">
+                    <img src="images/ruby.png" alt="Ruby Hoshino" class="sidebar-character-1" title="Ruby Hoshino">
+                </div>
+            </aside>
+            <!-- Main Page -->
+            <main id="middleContent">
+                <!-- Home Section-->
+                <section id="homeSection">
+                    <header>
+                        <h1>Welcome to my website!</h1>
+                        <div class="home-banner">
+                            <img src="images/home-banner.jpg" alt="Grassy hill from Popstar (Kirby universe)">
+                        </div>
+                    </header>
+                    <article class="home-text text-containers-secondary-bg">
+                        <img src="images/kirby19.gif" class="home-img-1" alt="Kirby holding Hi!! sign">
+                        <p>
+                            When I discovered Neocities and the old web, and seeing all the
+                            amazing websites people were doing, I decided to make my own. The
+                            site is mainly themed after the Kirby franchise, but I also
+                            showcase other of my interests. It's also a place for me to create
+                            fun things and share it with others. I hope you enjoy my website
+                            and if you liked it, you can sign my Guestbook ! You can find my
+                            button and other cool websites in the Miscellaneous section :D
+                        </p>
+                    </article>
+                    <!-- Recent Updates Section -->
+                    <article class="recent-updates text-containers-main-bg">
+                        <h2>
+                            Updates / Blog
+                            <a href="rss/updates.rss" target="_blank" style="color: orange; margin-left: 5px; font-size: small">Click this for RSS Feed</a>
+                        </h2>
+                        <div class="text-containers-secondary-bg">
+                            <p>
+                                <strong>02/03/2026</strong>
+                                This site now officially moved out of Neocities to my own
+                                server, but I still keep a profile there and will have updates
+                                show on Neocities, by making HTML files with full size iframes
+                                of my actual website, I can make it "look" like my website is
+                                still on there, like when you update your site and it shows a
+                                preview of it, it will show how the site looks like on my
+                                server. Hope that wasn't too confusing... Why did I leave you
+                                might ask, well the main reason is monetary, I'm already paying
+                                for the server, but having to pay for Neocities supporter on top
+                                of it feels like a waste, especially with how limited it is
+                                anyways.
+                            </p>
+                            <p>
+                                <strong>28/02/2026 - Part 3</strong>
+                                I fixed the folder structure for my images, previously, it was
+                                all scattered on the root "images" folder, without any
+                                sub-categories, but I fixed it now. This means that the site
+                                appears broken if you're still on the old cache, so press
+                                CTRL+F5 to refresh it.
+                            </p>
+                            <p>
+                                <strong>28/02/2026 - Part 2</strong>
+                                I added anime reviews for Haruhi Suzumiya, Himawari, Shribako,
+                                Girls' Last Tour, Watamote, and Elfen Lied. Oh and I didn't say
+                                it before, but I changed the side character from Yui Hirasawa to
+                                Ruby Hoshino. I also added a new page!!! Learn all about
+                                terrariums and look at mine in the new Terrariums page. I've
+                                wanted to make a page about this for a very long time.
+                            </p>
+                            <p>
+                                <strong>28/02/2026</strong>
+                                It's been a while isn't it? All my time was spent on the
+                                Frutiger Aero Archive, I let this website gather dust for a
+                                while. But now, I want to work on it again, as I learned so many
+                                things and did so much stuff since then. I added a new anime
+                                review about Oshi no Ko, which is one I really enjoyed lately.
+                                I'm also introducing RSS updates! The link can be found on the
+                                header of the changelog.
+                            </p>
+                            <p>
+                                <strong>28/05/2025</strong>
+                                Changed sidebar character to Yui Hirasawa from K-ON!
+                            </p>
+                            <p>
+                                <strong>16/05/2025</strong>
+                                Added Angel Beats to Anime Reviews, added a few songs to the
+                                navbar music player.
+                            </p>
+                            <p>
+                                <strong>30/04/2025</strong>
+                                Finally added some reviews on the new page, I will add more
+                                later as I did not add everything yet. I made new CRT TVs at
+                                <a href="https://frutigeraeroarchive.org/televisions">frutigeraeroarchive</a>
+                                if you want to check them out, I will leave the one on this site
+                                as it is.
+                            </p>
+                            <p>
+                                <strong>14/03/2025</strong>
+                                Started work on a new page on Anime reviews.
+                            </p>
+                            <p>
+                                <strong>13/03/2025</strong>
+                                Adapted my website for 1080p screen height, in contrary to 19:10
+                                as previously.
+                            </p>
+                            <p>
+                                <strong>11/03/2025</strong>
+                                Returned back to the old logo, I got very nostalgic looking back
+                                at earlier versions and I think it was iconic. I also fixed
+                                stuff on my tribute pages and the links in the navbar will no
+                                longer open new windows, since I think it is a bit annoying.
+                                Also changed the font from Arial to Roboto. <br>Part 2: I
+                                added songs back to the favorite games section! This used to be
+                                a feature in some of the earliest versions of this website. I
+                                also added Mass Effect 3 there, as I forgot to add it.<br>
+                                Part 3: Changed the colors and theme of everything! The borders
+                                are slimmer, buttons look aero, I will work on polishing the new
+                                look next.
+                            </p>
+                            <p>
+                                <strong>03/03/2025</strong>
+                                A new random plays on each different pages now, instead of the
+                                same one.
+                            </p>
+                            <p>
+                                <strong>28/02/2025</strong>
+                                Made the logo and text be an image instead. Re-opened sketchbook
+                                submissions. I will start working again on this site soon.
+                            </p>
+                            <p>
+                                <strong>17/01/2025</strong>
+                                I stopped using iFrames for the layout, i'm now using HTML again
+                                for the navigation, i figured out a way to keep the navbar music
+                                playing across different pages using cookies.
+                            </p>
+                            <p>
+                                <strong>13/01/2025</strong>
+                                Added some links and fixed some incorrect information in the
+                                Coding Tricks section. I also added a few of my artworks and
+                                sketchbook drawings that i didn't add before.
+                            </p>
+                            <p>
+                                <strong>03/01/2025</strong>
+                                Happy new year, everyone ! I'm taking a break from updating this
+                                site for an indeterminate amount of time, as I'm working on the
+                                <a href="https://frutigeraeroarchive.org/" target="_blank">Frutiger Aero Archive</a>. So don't be surprised if I don't add your drawings in
+                                Sketchbook, I will, eventually.
+                            </p>
+                            <p>
+                                <strong>09/12/2024</strong>
+                                Added more drawings, and corrected typos from all over the site,
+                                there were a lot ! Also, Chrismas Theme.
+                            </p>
+                            <p>
+                                <strong>09/11/2024</strong>
+                                Made a new section called Coding Tricks, where I'm going to put
+                                some tips and tricks on coding that I've learned while making
+                                this website and other projects.
+                            </p>
+                            <p>
+                                <strong>05/11/2024</strong>
+                                Made the sketchbook section a lot cleaner, added titles, and
+                                fixed the broken form.
+                            </p>
+                            <p>
+                                <strong>30/10/2024</strong>
+                                Added many new songs to the navbar music player.
+                            </p>
+                            <p>
+                                <strong>29/10/2024</strong>
+                                I made an "Artworks" section where I showcase my drawings /
+                                digital art.
+                            </p>
+                            <p>
+                                <strong>27/10/2024</strong>
+                                The website is now a single page application (SPA), using
+                                iframes (because of the limitations of Neocities, I can't use a
+                                framework like React to do this), which means no more loading
+                                screens when changing page. To do this, I sadly had to remove
+                                the sitemap section, because it can't link to pages outside
+                                itself anymore. I also changed the navbar music player, there is
+                                now a playlist of songs, this is done with JavaScript.
+                            </p>
+                            <p>
+                                <strong>19/10/2024</strong>
+                                Added back the CRT Television section with the small TV, because
+                                i missed it. Also worked on my Frutiger Aero tribute a bit.
+                                Thanks for all your drawings that you guys sent me in the
+                                sketchbook ! I really appreciate it, and they're beautiful.
+                            </p>
+                            <p>
+                                <strong>30/08/2024</strong>
+                                I uploaded the Frutiger Archive on a new website instead of
+                                hosting it on this one, because it's going to be too big to just
+                                be a tribute page hosted here. You can follow it at
+                                <a href="https://neocities.org/site/frutigeraeroarchive">this link</a>. I also added a link to it on the navbar.
+                            </p>
+                            <p>
+                                <strong>29/08/2024</strong>
+                                Hello again ! Sorry for the lack of updates, I have been a bit
+                                busy. Anyway, I'm working on a
+                                <a href="https://frutigeraeroarchive.neocities.org/">Frutiger Aero Archive</a>, feel free to take a look, I'm nowhere near done. I'm not sure
+                                yet if it's going to become its own website or if I'll keep it
+                                hosted on here. Thanks for the comments on the guestbook and all
+                                the people that sent me their drawings which look very cool.
+                            </p>
+                            <p>
+                                <strong>09/07/2024</strong>
+                                I added 177 buttons to the Miscellaneous section, and organized
+                                it better.
+                            </p>
+                            <p>
+                                <strong>07/07/2024</strong>
+                                I just noticed I accidentally removed the custom songs for each
+                                section, it was just one song playing, so that's fixed now. I
+                                also made the CRT TV better with power LED's and more 3D look
+                                with gradients.
+                            </p>
+                            <p>
+                                <strong>05/07/2024</strong>
+                                Changed the icons in the navbar to be more Kirby themed and
+                                cleaner.
+                            </p>
+                            <p>
+                                <strong>04/07/2024</strong>
+                                I decided to remove the old CRT section because I did not like
+                                having 2 of the same thing and I felt like it was not as good as
+                                the new one (previously called Realistic CRT, now CRT
+                                Television). But now that I got some space there, I will
+                                probably start working on new sections, I have some ideas
+                                already. Just need to get it done.
+                            </p>
+                            <p>
+                                <strong>02/07/2024</strong>
+                                Added back the sheep, but now you have to click the button in
+                                the navigation bar to spawn one (or multiple). I will also make
+                                the GIF section better soon, since I have not really changed it
+                                since I made it. Part 2: Improved the Realistic CRT page and
+                                fixed some bugs.
+                            </p>
+                            <p>
+                                <strong>30/06/2024</strong>
+                                Added the ability to pause the Kirby following the mouse by
+                                clicking on him, and added
+                                <a href="https://adrianotiger.github.io/web-esheep/">Esheep</a>
+                                because I find it entertaining. Part 2: I removed it because it
+                                didn't work properly on phones, but I might use it later, maybe.
+                                I added a link to my Neocities profile in the navbar in the form
+                                of a button.
+                            </p>
+                            <p>
+                                <strong>27/06/2024</strong>
+                                Remade my About Me section by adding / changing some text and
+                                added silly GIFs and images where there was nothing previously.
+                                Also added images elsewhere. Part 2: Greatly improved
+                                responsiveness on phones, the page now works in portrait mode
+                                except for some sections with huge content (Music Player, CRT
+                                TV, Sketchbook), it also looks good on 800x600 resolution now.
+                            </p>
+                            <p>
+                                <strong>25/06/2024</strong>
+                                I've set up a custom domain name, it changes from
+                                daniele63.neocities.org, to daniele63.com, but the old URL will
+                                still redirect to the new one. You can do this by buying a
+                                domain name with a service like Namecheap, then, you need to go
+                                to Neocities > Account settings > Manage Site Settings > Custom
+                                Domain, put your custom domain name there that you bought, and
+                                then add the "A record" and "AAAA record" in your domain name
+                                provider, usually the option is located in advanced DNS, also
+                                remove the default redirect if there's one.
+                                <a href="https://www.namecheap.com/support/knowledgebase/article.aspx/10491/2254/video-how-to-add-an-a-record-for-a-domain-name-in-namecheap-account/">here's how on Namecheap</a>. You can also look at how I've set it up
+                                <a href="images/namecheap.jpg">here</a>.
+                            </p>
+                            <p>
+                                <strong>24/06/2024</strong>
+                                I made the Sitemap section a lot nicer, adding descriptions of
+                                each links and a layout more in line with the rest of the
+                                website. Part 2: I added a lot of decorative buttons in the
+                                Miscellaneous section.
+                            </p>
+                            <p>
+                                <strong>23/06/2024</strong>
+                                Made each section have a unique music, I will maybe change them
+                                later, but I think it's pretty cool. Part 2: I added a view
+                                counter to the bottom of this page, you can do this using the
+                                Neocities API and a bit of JavaScript, you can find a tutorial
+                                <a href="https://dannarchy.com/tut/tut_002">here</a>.
+                            </p>
+                            <p>
+                                <strong>22/06/2024</strong>
+                                Since I had to fix a lot of the CSS because of the sanitize.css
+                                thing, I took the opportunity to also make the rest of the CSS
+                                files less bloated and more organized. I don't know if this
+                                helps load speeds or not, but I saved 2 Kilobytes (did you know
+                                Super Mario Bros only weighs 31 Kilobytes ?). Do I have an
+                                obsession with optimization ? Maybe.
+                            </p>
+                            <p>
+                                <strong>21/06/2024</strong>Previously, I had problems with my
+                                navbar and other elements having different heights in other
+                                browsers/devices. I finally fixed this by using this
+                                <a href="https://csstools.github.io/sanitize.css/">CSS library</a>
+                                that makes the CSS "reset" from the default values and basically
+                                be the same on every browser. I also fixed my Kirby Games
+                                section that was kind of glitched and had a lot of repeated
+                                code, i basically removed 500 lines of useless code in that CSS
+                                file.
+                            </p>
+                            <p>
+                                <strong>19/06/2024</strong>I made a sitemap section (a list of
+                                all the links of my website). I also added text in site info and
+                                moved the "embed my button" thing to the Miscellaneous section.
+                            </p>
+                            <p>
+                                <strong>18/06/2024</strong>I made a sidebar on the right, with
+                                different ads on it that I think look cool. Because of this, i
+                                also had to resize certain sections so that they stayed
+                                responsive, so the CRT and music player got a bit smaller. I
+                                also added buttons in the arcade section to toggle things on /
+                                off. Part 2: Improved the Arcade Games section by removing games
+                                that did not work and adding others (FNF, Tetris, Super Mario
+                                Bros), I also changed the way the buttons look and added a scan
+                                line filter on the iframe.
+                            </p>
+                            <p>
+                                <strong>17/06/2024</strong>I changed the website logo and also
+                                added a music player to the navbar, with a song for each
+                                section. Part 2: I changed text around the website, added more,
+                                and so on. Maybe will do a blog section later ? I wonder. I
+                                don't have much to talk about, so I will think about it.
+                            </p>
+                            <p>
+                                <strong>15/06/2024</strong>Made navbar more compact and changed
+                                almost all icons. I've changed my button a bit, feel free to
+                                update it if you have not hot linked.
+                            </p>
+                            <p>
+                                <strong>14/06/2024</strong>Had to remove some Naruto songs in
+                                Music Player that didn't work anymore (that's an issue with
+                                embedding YouTube videos). I also added Ocarina of Time songs.
+                            </p>
+                            <p>
+                                <strong>12/06/2024</strong>I greatly improved responsiveness
+                                across different sizes, the page should now stay in the middle
+                                even on a bigger screen. Part 2: You can now use my website and
+                                realistic CRT without JavaScript enabled, with some interactive
+                                features disabled, however. Part 3: I no longer hotlink any
+                                buttons (that is, having buttons images linked from people's
+                                websites, instead of being hosted on my own), I also added a
+                                bunch of new buttons and removed some that did not work anymore.
+                            </p>
+                            <p>
+                                <strong>10/06/2024</strong>I made my page different HTML files
+                                instead of one as before because I noticed it was getting really
+                                slow to load and you basically had to download the whole website
+                                before being able to use it so, it's now divided in different
+                                files and also different CSS and JavaScript files. Because of
+                                that we lost the ability to hear the music player on other
+                                pages, but i think it's not that big of a deal.
+                            </p>
+                            <p>
+                                <strong>09/06/2024</strong>Another Tribute Page, this time for
+                                WALL-E, my favorite animated movie from Pixar, took a few days
+                                to make and I don't really have time to make it look perfect at
+                                the moment, but I might improve it later.
+                            </p>
+                            <p>
+                                <strong>04/06/2024</strong>I made a >Minecraft Tribute website,
+                                inspiration struck me at 4AM and I finished it the day after.
+                            </p>
+                            <p>
+                                <strong>01/06/2024</strong>I made the website appear bigger as
+                                it should be (I was on 125% dpi before, and I changed to 100%).
+                            </p>
+                            <p>
+                                <strong>26/05/2024</strong>Huge update! I made the website a bit
+                                more 90s (using normal fonts now), changed images here and
+                                there, and redid the Sketchbook section. You can now send
+                                pictures you made using the form, if I like them, I will display
+                                them in the gallery.
+                            </p>
+                            <p>
+                                <strong>21/05/2024</strong>Improved responsiveness on different
+                                device sizes.
+                            </p>
+                            <p>
+                                <strong>07/05/2024</strong>Since 123Guestbook is shutting down
+                                in July, I've made a new one with Smart Guestbook. Be sure to
+                                check it out and say hi ! You can still find the old one with
+                                the old messages archived in the Past Versions section of my
+                                website.
+                            </p>
+                            <p>
+                                <strong>27/04/2024</strong>Hi! I've been busy for a while, sorry
+                                about that ! I added a new section where I showcase my drawings,
+                                go take a look !
+                            </p>
+                            <p>
+                                <strong>19/02/2024</strong>Renamed the "Cool Websites" section
+                                to "Miscellaneous", I removed the thumbnails so it's easier to
+                                add new links, I added stickers too. Part 2: I made a new
+                                button, feel free to use it !
+                            </p>
+                            <p>
+                                <strong>15/02/2024</strong>I re-added autoplay after i finally
+                                figured out how to set the default volume on YouTube iframes.
+                            </p>
+                            <p>
+                                <strong>26/01/2024</strong>Added a new Entertainment Section:
+                                Sketchbook, featuring JS Paint.
+                            </p>
+                            <p>
+                                <strong>23/01/2024</strong>Changes to Realistic CRT Simulator
+                                page, improved the VHS Button and added other things.
+                            </p>
+                            <p>
+                                <strong>18/01/2024</strong>Cleaned the site up a bit and
+                                disabled the default autoplay on music player. I also modified
+                                the recent updates box.
+                            </p>
+                            <p>
+                                <strong>14/01/2024</strong>I changed the About Me page again and
+                                added way more stuff ! Also, I made a SpaceHey account so feel
+                                free to add me if you have one too (the link is in About Me).
+                            </p>
+                            <p>
+                                <strong>06/01/2024</strong>Improved the Television in CRT
+                                Television section, and made multiple sections adapt better to
+                                small resolutions.
+                            </p>
+                            <p>
+                                <strong>03/01/2024</strong>Changed a lot of the Realistic CRT TV
+                                code, added buttons to toggle Whine and Flicker, and fixed the
+                                VHS button not working with the other buttons.
+                            </p>
+                            <p>
+                                <strong>31/12/2023</strong>I hope everyone had a merry
+                                Christmas, and I wish you all a happy new year. I changed some
+                                images on the website and in the navigation bar.
+                            </p>
+                            <p>
+                                <strong>04/12/2023</strong>Redid the whole Kirby Games section,
+                                now with each console having their color schemes. I also changed
+                                the website for Christmas.
+                            </p>
+                            <p>
+                                <strong>06/11/2023</strong>Redesign of Favorite Games and About
+                                Me sections.
+                            </p>
+                            <p>
+                                <strong>31/10/2023</strong>I changed the font to look a bit more
+                                cartoony and less like the default Arial, and redid the About Me
+                                section.
+                            </p>
+                            <p>
+                                <strong>12/10/2023</strong>Added a button so that you can upload
+                                your own (MP4's) videos to the Realistic CRT TV.
+                            </p>
+                            <p>
+                                <strong>08/10/2023</strong>Improved the Realistic CRT Page, now
+                                with VHS Filter and Noise Filter buttons.
+                            </p>
+                            <p>
+                                <strong>06/10/2023</strong>Hello again, just writing this to say
+                                I'm working on other web development projects that might help me
+                                get a job in the future. If I don't update this site frequently
+                                anymore, that's why. I still read the Guestbook and appreciate
+                                all the positive comments.
+                            </p>
+                            <p>
+                                <strong>06/09/2023</strong>Changed the CRT Television a bit to
+                                look more like the real one, now with a Piplup sticker ! Today
+                                I'm turning 23 years old.
+                            </p>
+                            <p>
+                                <strong>13/08/2023</strong>Added new songs to Music Player,
+                                including Mario Party songs.
+                            </p>
+                            <p>
+                                <strong>09/08/2023</strong>Big update, changed fonts and a lot
+                                of text, and the text boxes and headings now have pattern
+                                backgrounds.
+                            </p>
+                            <p>
+                                <strong>22/06/2023</strong>Took a long break, I got obsessed
+                                with plants and gardening, so I had no will to do programming. I
+                                fixed some missing buttons and changed the poster in Music
+                                Player.
+                            </p>
+                            <p>
+                                <strong>05/05/2023</strong>Improved multiple sections and added
+                                instructions in the Arcade Section. Also added more GIFs in the
+                                GIFs Collection.
+                            </p>
+                            <p>
+                                <strong>04/05/2023</strong>The Arcade now features Kirby ! I
+                                also added 2 more games.
+                            </p>
+                            <p>
+                                <strong>30/04/2023</strong>Optimized the code a lot on my side,
+                                and replaced 2 games that were broken in arcade by "Snake" and
+                                "Minesweeper". I also organized the songs in Music Player
+                                better.
+                            </p>
+                            <p>
+                                <strong>25/04/2023</strong>I launched this website 1 year ago
+                                now, and we've reached 100,000 views ! This feels unreal, that
+                                so many people visited my small website. Thanks everybody.
+                            </p>
+                            <p>
+                                <strong>19/04/2023</strong>I made the TV in the CRT Television
+                                Section look more realistic, and made small changes to Music
+                                Player Section. Also, changed text almost everywhere, to make it
+                                more polished, I can't believe it's almost been a year already !
+                                I Launched the website on April of last year (2022) !
+                            </p>
+                            <p>
+                                <strong>25/03/2023</strong>Added a section dedicated to Browser
+                                Games called "The Arcade".
+                            </p>
+                            <p>
+                                <strong>24/02/2023</strong>Added 28 new songs to Music Player.
+                            </p>
+                            <p>
+                                <strong>09/02/2023</strong>I made a 90s theme to commemorate my
+                                first version uploaded to Neocities. You can see it
+                                <a href="https://web.archive.org/web/20230209192300/https://daniele63.neocities.org/" target="_blank">here</a>.
+                            </p>
+                            <p>
+                                <strong>31/01/2023</strong>Hi everyone, and thanks to all that
+                                commented on the guestbook and visited. I'm taking a break from
+                                working on this website, as I have to focus on studying other
+                                aspects of coding.
+                            </p>
+                            <p>
+                                <strong>02/01/2023</strong>Changed the Navbar around and added
+                                categories.
+                            </p>
+                            <p><strong>01/01/2023</strong>Happy new year, everyone !</p>
+                            <p>
+                                <strong>27/12/2022</strong>Big changes in the Fav. Games
+                                section.
+                            </p>
+                            <p>
+                                <strong>26/12/2022</strong>Links that are external now show the
+                                ⧉ symbol next to them. Changed website colors and other small
+                                things.
+                            </p>
+                            <p>
+                                <strong>25/12/2022</strong>Merry Christmas, everyone ! Thanks
+                                for the 68.857 views, and all your support. Added a way to
+                                restore the default playlist in music player.
+                            </p>
+                            <p>
+                                <strong>16/12/2022</strong>Changes to "This Website" section.
+                            </p>
+                            <p>
+                                <strong>04/12/2022</strong>Changes to CRT Television 2, added
+                                possibility to add videos from other websites than YouTube.
+                            </p>
+                            <p>
+                                <strong>01/12/2022</strong>New theme for Christmas, added Banjo
+                                Kazooie songs.
+                            </p>
+                            <p>
+                                <strong>17/11/2022</strong>Take a look at the new CRT Simulator,
+                                a fully functional TV that I spent hours on coding.
+                            </p>
+                            <p>
+                                <strong>08/11/2022</strong>I changed some things everywhere,
+                                especially in Kirby Games and I added descriptions of the
+                                neocities websites in Cool Websites.
+                            </p>
+                            <p>
+                                <strong>04/11/2022</strong>Hi, I'm back. Today I added 2
+                                websites to the Cool Websites section, and changed the look of
+                                the Music Player. Also added 4 new songs.
+                            </p>
+                            <p>
+                                <strong>29/10/2022</strong>You can now play an HTML game on the
+                                TV by pressing the "Game" button, I may do a dedicated section
+                                later.
+                            </p>
+                            <p>
+                                <strong>28/10/2022</strong>Added the "Past versions" directly
+                                into the main site instead of an external file. Added background
+                                patterns to various containers.
+                            </p>
+                            <p>
+                                <strong>27/10/2022</strong>Added thumbnails to the Neocities
+                                sites in Cool Websites Section. Went back to my old theme
+                                because i missed it. Reset Button added to CRT Simulator, a lot
+                                of Kirby 64 songs added in Music Player. Improved
+                                Responsiveness. Thanks for 50,000 views !!! Update 2 - I
+                                compressed every image on the website. It should load up quicker
+                                now.
+                            </p>
+                            <p>
+                                <strong>26/10/2022</strong>I should be sleeping ! Anyway, I
+                                added lot of text in the About Me page and made it look a bit
+                                more polished. And new website background. Also added Mario Kart
+                                Double Dash to the favorite games, I don't know why I forgot to.
+                            </p>
+                            <p>
+                                <strong>25/10/2022</strong>Added 5 songs from Pokémon Soulsilver
+                                and Super Mario World 1 and 2.
+                            </p>
+                            <p>
+                                <strong>24/10/2022</strong>Made some changes to the CRT again,
+                                it's now way bigger and a bit more realistic. Added instructions
+                                and a bit of history.
+                            </p>
+                            <p>
+                                <strong>22/10/2022</strong>Changes to About Me and CRT section.
+                            </p>
+                            <p>
+                                <strong>20/10/2022</strong>Changed the logo back to Waddle-Dee !
+                                I couldn't resist after finding this picture. New About me
+                                Section, changed a few things in Music Player, and made a new
+                                button.
+                            </p>
+                            <p>
+                                <strong>19/10/2022</strong>Added scan lines and noise to the CRT
+                                television for more realism.
+                            </p>
+                            <p>
+                                <strong>13/10/2022</strong>Changed a lot of things in the CRT
+                                Section. Added GIFs.
+                            </p>
+                            <p>
+                                <strong>09/10/2022</strong>Added songs and small changes. New
+                                section added: GIFs ! Will add more in the future.
+                            </p>
+                            <p>
+                                <strong>30/09/2022</strong>Song in music player now autoplay
+                                when selected. Added 3 songs to the music player: Kirby 64: The
+                                Crystal Shards - Above The Clouds, Butter Building - Super Smash
+                                Bros. Brawl, Yoshi's Woolly World - Yarn Yoshi Takes Shape.
+                            </p>
+                            <p>
+                                <strong>28/09/2022</strong>Various little changes across the
+                                site.
+                            </p>
+                            <p>
+                                <strong>27/09/2022</strong>Improved favorite games section and
+                                headers.
+                            </p>
+                            <p>
+                                <strong>25/09/2022</strong>Improved Kirby Games section and
+                                added 2 games to my favorites, CRT TV now bigger.
+                            </p>
+                            <p>
+                                <strong>21/09/2022</strong>Hello everyone, and thanks for 36k
+                                views !!! No updates for now, I'm busy with studying lately. I
+                                always check the Guestbook so feel free to post there ! I change
+                                the website theme music frequently when I find fitting songs.
+                            </p>
+                            <p>
+                                <strong>31/08/2022</strong>Improved the "This Website" Section,
+                                new navbar icons, added text to "About Me".
+                            </p>
+                            <p>
+                                <strong>23/08/2022</strong>Hi I'm back ! I haven't uploaded in a
+                                while because I was burnt-out with programming (or rather
+                                learning React.JS). It felt like a chore, not something I
+                                enjoyed.<br>
+                                So I took a break. <br>I took interest in Photography again
+                                and had a lot of fun photographing things. Now I want to go back
+                                to programming but turn it into my passion as well, not just
+                                something I want to learn to get a job someday.<br>
+                                Because you're only going to get good at something if you enjoy
+                                it. Thanks to everyone that supported me on Neocities and for
+                                the unbelievable amount of views, I'm truly grateful and humbled
+                                by it.<br>
+                                Let me know what you'd like to see on this website, I'm thinking
+                                of a making a blog, but I don't know if anyone cares. I'm kind
+                                of running out of ideas on what to add, haha. Anyway, thanks for
+                                all. Update 2: Compressed almost all the images on the website,
+                                which should load up faster now. Added a Monster Hunter Tri
+                                song.
+                            </p>
+                            <p>
+                                <strong>13/07/2022</strong>New Screenshots Section where I post
+                                pictures I want to showcase from the games I'm playing.
+                            </p>
+                            <p>
+                                <strong>12/07/2022</strong>Added a newly announced Kirby Game in
+                                my Kirby Games section. No big updates for now, but I have some
+                                ideas.
+                            </p>
+                            <p><strong>10/07/2022</strong>Improved the Archive page.</p>
+                            <p>
+                                <strong>09/07/2022</strong>Improved the Fav Games and Kirby
+                                Games section. Thank you so much for 20,000 views !
+                            </p>
+                            <p>
+                                <strong>08/07/2022</strong>I fixed the awful theme and added new
+                                favorite games. I also added 6 new songs: from Pokémon, the
+                                English Kirby Opening theme and a Mario 64 song. Update 2: Even
+                                more Pokémon songs added !
+                            </p>
+                            <p>
+                                <strong>03/07/2022</strong>Hello again, I have not updated in a
+                                while as I'm learning new things in programming. I gave the site
+                                a more blue background and changed a few things around.
+                            </p>
+                            <p>
+                                <strong>23/06/2022</strong>Changed a lot of icons and changed
+                                the header text to yellow. I removed Coding Tricks from the
+                                navbar because I prefer to focus on other parts of the website
+                                and it felt too different.
+                            </p>
+                            <p>
+                                <strong>20/06/2022</strong>Added a new section ! You can now
+                                look at the history of all Kirby Games through the years, from
+                                Game Boy to Switch. Thanks to Nintendo Fandom Wiki for the text.
+                            </p>
+                            <p>
+                                <strong>16/06/2022</strong>Made the table in CRT Television
+                                Section bigger. I also added links in "This Website" and
+                                centered About Me image.
+                            </p>
+                            <p>
+                                <strong>15/06/2022</strong>I changed the color of the UI to
+                                light blue instead of white, added Mario Party DS and MH TRI to
+                                my Favorite Games, and made the playlist text darker in the
+                                Music Player.
+                            </p>
+                            <p>
+                                <strong>14/06/2022</strong>Changed Music Player UI a bit. 2 New
+                                songs: Zelda Wind Waker theme, King Dedede's Theme [Brawl]
+                                theme.
+                            </p>
+                            <p>
+                                <strong>13/06/2022</strong>I'm back, I was sick with the
+                                coronavirus (still is, but I feel way better), so I didn't feel
+                                like working on this site. I may start working on it again.
+                            </p>
+                            <p>
+                                <strong>29/05/2022</strong>New music player section ! It's
+                                inspired by a Winamp skin based on Kirby.
+                            </p>
+                            <p>
+                                <strong>27/05/2022</strong>I changed some text in many sections.
+                            </p>
+                            <p>
+                                <strong>26/05/2022</strong>For copyright reasons I removed the
+                                local MP3 files and replaced them with YouTube embedded videos
+                                because I think it's not allowed otherwise. I will make it look
+                                better later. You can now add your own videos to the Television
+                                by putting the end of a YouTube link.
+                            </p>
+                            <p>
+                                <strong>24/05/2022</strong>Added images to the shelves in CRT
+                                Simulator and renamed it to "CRT Television" in Navbar.
+                            </p>
+                            <p>
+                                <strong>23/05/2022</strong>Videos will now pause when launching
+                                audio.
+                            </p>
+                            <p>
+                                <strong>21/05/2022</strong>Added 2 other games to my favorite
+                                games section and improved some things. The CRT shouldn't be
+                                glitched on tablets now.
+                            </p>
+                            <p>
+                                <strong>20/05/2022</strong>Added 2 games to my favorite games
+                                section and refined the CRT simulator.
+                            </p>
+                            <p>
+                                <strong>19/05/2022</strong>Thanks everyone for 10,000 views on
+                                Neocities, I really appreciate it ! I updated some sections and
+                                fixed some code.
+                            </p>
+                            <p>
+                                <strong>17/05/2022</strong>Added lot of songs to the music
+                                section !
+                            </p>
+                            <p>
+                                <strong>13/05/2022</strong>Sorry for the lack of updates, have
+                                been busy with real life lately.
+                            </p>
+                            <p>
+                                <strong>10/05/2022</strong>Check out the new CRT Simulator ! A
+                                recreation of a CRT TV in HTML/CSS/JS.
+                            </p>
+                            <p>
+                                <strong>08/05/2022</strong>Navigation links that are external
+                                are now yellow, and I changed the layout size a bit, and new
+                                featured video !
+                            </p>
+                            <p><strong>07/05/2022</strong>Updated the home page.</p>
+                            <p>
+                                <strong>06/05/2022</strong>Added a new section explaining my
+                                inspirations for this website, added more songs to the music
+                                section.
+                            </p>
+                            <p>
+                                <strong>05/05/2022</strong>Changed the headings and improved
+                                every section a bit.
+                            </p>
+                            <p>
+                                <strong>04/05/2022</strong>Added a "coding tricks" page to
+                                navigation, a 1990s inspired page. Thanks to the 6000 people
+                                that have visited !
+                            </p>
+                            <p>
+                                <strong>03/05/2022</strong>Fixed the code a bit and other minor
+                                tweaks.
+                            </p>
+                            <p>
+                                <strong>02/05/2022</strong>I added a tribute page for Monster
+                                Hunter in Favorite Games section and more GIFs to the navbar,
+                                better guestbook, and you can now check the past versions of the
+                                site (link is in home section). Also Went back to blue theme and
+                                made the background image responsive, and updated music player
+                                section.
+                            </p>
+                            <p>
+                                <strong>01/05/2022</strong>Big site redesign, changed a lot of
+                                things (more to come).
+                            </p>
+                            <p>
+                                <strong>30/04/2022</strong>Current songs will now stop when
+                                starting another song, improved About Me page
+                            </p>
+                            <p>
+                                <strong>29/04/2022</strong>Added navbar icons and remade the
+                                home page. Remade music player page. Thanks for 3000 Views ! I
+                                never thought so many people would come here.
+                            </p>
+                            <p>
+                                <strong>28/04/2022</strong>Updated "Favorite Games" and "Cool
+                                Websites" sections.
+                            </p>
+                            <p>
+                                <strong>27/04/2022</strong>Made the whole website one HTML file
+                                with the introduction of JavaScript, this means the music player
+                                will not stop playing when pressing another link anymore.
+                                Changed font and added more contrast to the colors.
+                            </p>
+                            <p>
+                                <strong>26/04/2022</strong>Changed some images and text and
+                                added custom mouse cursors.
+                            </p>
+                            <p><strong>25/04/2022</strong>Changed images and site logo.</p>
+                            <p>
+                                <strong>24/04/2022</strong>Updated color schemes and made the
+                                Guestbook and Cool Websites buttons functional.
+                            </p>
+                        </div>
+                    </article>
+                    <!-- Featured Buttons carousel -->
+                    <nav class="carousel-buttons text-containers-main-bg" aria-label="88x31 Button Carousel">
+                        <div>
+                            <a href="" target="_blank">
+                            <img src="images/danieles_button.jpg" alt="Daniele's Button">
+                            </a>
+                            <a href="https://dokode.moe/" target="_blank"><img src="images/dokodemo.gif" alt="Dokodemo Button"></a>
+                            <a href="https://cosmic-calamari.neocities.org/" target="_blank">
+                            <img src="images/calamaris-pizza-place.gif" alt="Cosmic Calamari's Button">
+                            </a>
+                            <a href="https://hopeslair.neocities.org/" target="_blank"><img src="images/hopeslair.gif" alt="Hope's Lair Button"></a>
+                            <a href="https://nippoverse.xyz/" target="_blank"><img src="images/nippo.png" alt="Nippoverse Button"></a>
+                            <a href="https://chocoboranch.neocities.org/" target="_blank"><img src="images/chocoran.png" alt="Chocoranch Button"></a>
+                            <a href="https://korbywo.neocities.org/" target="_blank">
+                            <img src="images/korbywo-button.gif" alt="KorbyWO Button">
+                            </a>
+                            <a href="https://kitschymew.neocities.org/" target="_blank"><img src="images/kitschymew.gif" alt="Kitsch Mew Button"></a>
+                            <a href="https://someotherstranger.neocities.org/home" target="_blank"><img src="images/coyotebutton.png" alt="Coyote Conundrum Button"></a>
+                            <a href="https://pizzacatdelights.neocities.org/" target="_blank"><img src="images/pizzacat-delights.png" alt="Pizzacat Delights"></a>
+                            <a href="https://moonview.neocities.org/" target="_blank">
+                            <img src="images/moonview.gif" alt="Moonview Button">
+                            </a>
+                            <a href="https://artwork.neocities.org/" target="_blank"><img src="images/artwork.gif" alt="Artwork Button"></a>
+                            <a href="https://otterpop.neocities.org/" target="_blank"><img src="images/otterpop.png" alt="Otterpop Button"></a>
+                        </div>
+                    </nav>
+                    <div class="view-counter-container text-containers-secondary-bg">
+                        <span>You are visitor number:</span>
+                        <span id="visitorCounter"></span>
+                    </div>
+                </section>
+            </main>
+            <footer id="bottomFooter">
+                <span>2022-2026 ©Daniele63</span><br>
+                <a href="mailto:daniele63web@hotmail.com">e-mail</a>
+                <a href="https://ko-fi.com/frutigeraeroarchive">ko-fi</a>
+                <a href="https://neocities.org/site/daniele63">neocities profile</a>
+            </footer>
+            <!-- Spacer -->
+            <div id="websiteSpacerBottom"></div>
+        </div>
+        <!-- Javascript -->
+        <script src="js/carousel.js"></script>
+        <script src="js/view-counter.js"></script>
+        <script src="js/nav-music.js"></script>
+    </body>
 </html>
